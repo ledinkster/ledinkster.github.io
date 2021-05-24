@@ -114,6 +114,12 @@ span.psw {
   font-weight: bold;
 }
 
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
 .close:hover,
 .close:focus {
   color: red;
