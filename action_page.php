@@ -1,8 +1,11 @@
 <html>
 <body>
+<?php
+$uname=$_POST["uname"];
+$psw=$_POST["psw"];
+echo "Username: $uname, password: $psw";
+?>
 
-<?php echo $_POST["uname"]; ?><br>
-<?php echo $_POST["psw"]; ?>
 
 </body>
 </html>
