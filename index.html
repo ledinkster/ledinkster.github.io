@@ -21,8 +21,53 @@
   <a href="contentCreation.html">Content Creation</a>
   <a href="about.html">About</a>
  </div>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://static-cdn.jtvnw.net/jtv_user_pictures/48ef493f-60b1-4bba-a583-424e40096a7c-profile_image-70x70.png" alt="dink" /></p>
+
 <h1 style="text-align: center;">Welcome to dinkster.live!</h1>
+
 <p>Whether you're here because I sent you the link and said "bruh check out my website plz" or somehow found it on your own, please enjoy your time here. The site is currently under construction and will (probably) be completed more in the next couple of months. Untill then, feel free to let me know what I can do better. Thanks!</p>
+
 <p>-Drew (dinkster)</p>
 </body>
