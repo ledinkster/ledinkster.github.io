@@ -1,1 +1,98 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/48ef493f-60b1-4bba-a583-424e40096a7c-profile_image-70x70.png">
+  <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9EZQXY2X5"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-H9EZQXY2X5');
+</script>
+</head>
+<body style ="background-color:#e6e2ff;">
+  
+<button onclick="document.getElementById('loginDisplay').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('signupDisplay').style.display='block'" style="width:auto;">Sign Up</button>
+  
+<div id="loginDisplay" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('loginDisplay').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="signupDisplay" class="modal">
+ 
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('signupDisplay').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+  
+<script>
+// Get the modal
+var signupModal = document.getElementById('signupDisplay');
+var loginModal = document.getElementById('loginDisplay');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
+    }
+    else if (event.target == signupModal) {
+        signupModal.style.display = "none";
+    }
+}
+</script>
+ 
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="contentCreation.html">Content Creation</a>
+  <a href="about.html">About</a>
+  <a class="active" href="merch.html">Merch</a>
+ </div>
+<h1 style="text-align: center;">Buy Your Dinkster Merch!</h1>
+</body>
