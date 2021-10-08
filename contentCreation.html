@@ -102,4 +102,16 @@ window.onclick = function(event) {
 <p><iframe src="https://www.youtube.com/embed/0MnO5JTw_zI" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>
 <h2>Latest Stream:</h2>
 <p><iframe src="https://player.twitch.tv/?video=1166950807&parent=www.dinkster.live" frameborder="0" allowfullscreen="true" scrolling="no" height="560" width="314"></iframe></p>
+  <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    video: "1166950807"
+  });
+</script>
 </body>
