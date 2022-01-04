@@ -15,4 +15,8 @@
 <loc>https://dinkster.live/about.html</loc>
 <changefreq>weekly</changefreq>
 </url>
+<url>
+<loc>https://dinkster.live/melee.html</loc>
+<changefreq>weekly</changefreq>
+</url>
 </urlset>
